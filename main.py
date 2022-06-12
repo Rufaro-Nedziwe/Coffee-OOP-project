@@ -1,33 +1,19 @@
-MENU = {
-    "espresso": {
-        "ingredients": {
-            "water": 50,
-            "coffee": 18,
-        },
-        "cost": 1.5,
-    },
-    "latte": {
-        "ingredients": {
-            "water": 200,
-            "milk": 150,
-            "coffee": 24,
-        },
-        "cost": 2.5,
-    },
-    "cappuccino": {
-        "ingredients": {
-            "water": 250,
-            "milk": 100,
-            "coffee": 24,
-        },
-        "cost": 3.0,
-    }
-}
+# from turtle import Turtle, Screen
+# rue=Turtle()
+# print(rue)
+# my_screen= Screen()
+# print(my_screen.canvheight)
+# rue.shape("triangle")
+# rue.color("red")
+# rue.forward(100)
+# rue.right(40)
+# rue.left(56)
+# my_screen.exitonclick()
 
-resources = {
-    "water": 300,
-    "milk": 200,
-    "coffee": 100,
-}
-
-
+import prettytable
+from prettytable import PrettyTable
+table = PrettyTable()
+table.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
+table.add_column("Type", ["Electric", "Fire", "Water"])
+table.align = "l"
+print(table)
